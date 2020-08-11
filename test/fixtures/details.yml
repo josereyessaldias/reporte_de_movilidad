@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  region: one
+  vistum: one
+  help_title: MyString
+  help_text: MyString
+  data_title: MyString
+  data_text: MyString
+  data_number: MyString
+
+two:
+  region: two
+  vistum: two
+  help_title: MyString
+  help_text: MyString
+  data_title: MyString
+  data_text: MyString
+  data_number: MyString
