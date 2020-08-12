@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_11_170244) do
+ActiveRecord::Schema.define(version: 2020_08_12_222023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,13 +36,27 @@ ActiveRecord::Schema.define(version: 2020_08_11_170244) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "sidebars", force: :cascade do |t|
+    t.string "help_title"
+    t.string "help_text"
+    t.string "data_title"
+    t.string "data_text"
+    t.string "data_number"
+    t.bigint "vistum_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["vistum_id"], name: "index_sidebars_on_vistum_id"
+  end
+
   create_table "vista", force: :cascade do |t|
     t.string "category"
     t.integer "order"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "bajada"
   end
 
   add_foreign_key "details", "regions"
   add_foreign_key "details", "vista"
+  add_foreign_key "sidebars", "vista"
 end

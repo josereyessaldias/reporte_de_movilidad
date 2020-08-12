@@ -1,0 +1,21 @@
+<br>
+<%= form_with model: @detail, url: detail_create_path(region_id:2,vistum_id:2), method: :post, local: true do |f| %>
+		
+		<%= f.label :help_title %>
+		<%= f.text_field :help_title, size:"90x5" %> <br>
+
+		<%= f.label :help_text %>
+		<%= f.text_field :help_text, size:"90x5" %>	<br>
+
+		<%= f.label :data_title %>
+		<%= f.text_field :data_title, size:"90x5" %> <br>
+
+		<%= f.label :data_text %>
+		<%= f.text_field :data_text, size:"90x5" %>	<br>
+
+		<%= f.label :data_number %>
+		<%= f.text_field :data_number, size:"90x5" %> <br>
+<br>
+<%= f.submit "Enviar" %>
+
+<% end %>

@@ -1,0 +1,167 @@
+
+
+
+<!-- <div class="container-fluid pl-0"> -->
+	<nav class="navbar menu-uc-superior pl-0 ml-0" style="position: sticky;top:0;z-index: 100">
+		<a class="navbar-brand pt-0" style="margin-top:90px;" href="https://www.uc.cl">
+			<img src=<%= asset_path "logo-uc.png" %> width="200px">
+		</a> 
+		<div>
+			<ul class="nav justify-content-end" style="margin-top:7px">
+				<li class="nav-item"><a class="nav-link" href="#">INGENIERIA</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">UNIVERSIDAD</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">PORTAL UC</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">CORREO</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+		
+		<div class="sidebar">	
+			<ul>
+
+				<li>
+					<select class="form-control" id="regionSelect" name="regionSelect"></select>
+				</li>
+
+				<li>
+					<a href="<%= asset_path root_path %>"><div class="row">
+						<i class="fas fa-home col-1 mt-1"></i><span class="col-11">INICIO</span>
+					</div></a>
+				</li>
+				
+				<% if @vistum.id == 1 %>
+				<li class="active">
+					<div class="row">
+						<i class="fas fa-check col-1"></i><span class="col-11">Encuesta Origen Destino</span>
+					</div>
+				</li>
+				<% else %> 
+				<li>
+					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 1) %>"><div class="row">
+						<i class="fas fa-user-check col-1"></i><span class="col-11">Encuesta Origen Destino</span>
+					</div></a>
+				</li>
+				<% end %>
+				
+				<% if @vistum.id == 2 %> 
+				<li class="active">
+					<div class="row">
+						<i class="fas fa-users col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+					</div>
+				</li>
+				<% else %>
+					<li>
+					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 2) %>"><div class="row">
+						<i class="fas fa-users col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+					</div></a>
+				</li>
+				<% end %>
+
+				<% if @vistum.id == 3 %> 
+				<li class="active">
+					<div class="row">
+						<i class="fas fa-bus col-1"></i><span class="col-11">Oferta de Transporte Público</span>
+					</div>
+				</li>
+				<% else %>
+				<li>
+					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 3) %>"><div class="row">
+						<i class="fas fa-bus col-1"></i><span class="col-11">Oferta de Transporte Público</span>
+					</div></a>
+				</li>
+				<% end %>
+
+				<% if @vistum.id == 4 %>
+				<li class="active">
+					<div class="row">
+						<i class="fas fa-chart-bar col-1"></i><span class="col-11">Performance de Transporte Público</span>
+					</div>
+				</li>
+				<% else %> 
+				<li>
+					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 4) %>"><div class="row">
+						<i class="fas fa-chart-bar col-1"></i><span class="col-11">Performance de Transporte Público</span>
+					</div></a>
+				</li>
+				<% end %>
+
+				<% if @vistum.id == 5 %> 
+				<li class="active">
+					<div class="row">
+						<i class="fas fa-car-alt col-1"></i><span class="col-11">Transporte Privado</span>
+					</div>
+				</li>
+				<% else %>
+				<li>
+					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 5) %>"><div class="row">
+						<i class="fas fa-car-alt col-1 mt-1"></i><span class="col-11">Transporte Privado</span>
+					</div></a>
+				</li>
+				<% end %>
+
+				<% if @vistum.id == 6 %> 
+				<li class="active">
+					<div class="row">
+						<i class="fas fa-bicycle col-1"></i><span class="col-11">Transporte No Motorizado</span>
+					</div>
+				</li>
+				<% else %>
+				<li>
+					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 6) %>"><div class="row">
+						<i class="fas fa-bicycle col-1"></i><span class="col-11">Transporte No Motorizado</span>
+					</div></a>
+				</li>
+				<% end %>
+
+				<% if @vistum.id == 7 %> 
+				<li class="active">
+					<div class="row">
+						<i class="fas fa-car-crash col-1"></i><span class="col-11">Seguridad Vial</span>
+					</div>
+				</li>
+				<% else %>
+				<li>
+					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 7) %>"><div class="row">
+						<i class="fas fa-car-crash col-1 mt-1"></i><span class="col-11">Seguridad Vial</span>
+					</div></a>
+				</li>
+				<% end %>
+
+			</ul>
+		</div>
+
+
+
+
+		<div id="textos cabecera" class="content">
+			<div class="cabecera-detalle">
+				Reporte de Movilidad
+			</div>
+			
+			<div class="row mr-0 pr-0">
+				<div class="col-10">
+					<div class="titulo-detalle">
+						<i class="fas fa-users" style="color:#e93f42"></i> <%= @vistum.category %>
+					</div>
+					<div class="texto-detalle">
+						<%= @vistum.bajada %>
+					</div>
+				</div>
+			</div>
+	
+			
+
+			<div id="RM"><%= link_to 'crear detalle', details_new_path %><%= link_to 'editar detalle', details_edit_path %>
+				<% 7.times do |i| %>
+					<% if @vistum.id == i+1 %>
+						<%= render "details/vistum#{i+1}" %>
+					<% end %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+
+</div>
+
