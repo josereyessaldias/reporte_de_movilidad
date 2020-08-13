@@ -60,3 +60,11 @@ Sidebar.create(vistum_id:7, help_title:"Fatalidades en accidentes",help_text:"Se
 Sidebar.create(vistum_id:7, help_title:"Causas y Fatalidades", help_text:"Mostramos la proporción de causas que componen a los accidentes, y también a las fatalidades.")
 Sidebar.create(vistum_id:7, help_title:"Accidentes Fatales por Zona", help_text:"Muestra en barras la cantidad de accidentes y fatalidades por zona. Esta visualización contiene todos los siniestros ocurridos desde el año 2000.")
 Sidebar.create(vistum_id:7, help_title:"Comparativo OCDE",help_text:"Compara una serie de indicadores de accidentes y fatalidades por habitante de la región con un benchmark internacional de seguridad vial entregado por la OCDE.")
+
+Detail.create(region_id:7,vistum_id:1,data_number:'132k')
+Detail.create(region_id:7,vistum_id:2,data_number:'1,87')
+Detail.create(region_id:7,vistum_id:3,data_number:'17')
+Detail.create(region_id:7,vistum_id:4,data_number:'54')
+Detail.create(region_id:7,vistum_id:5,data_number:'59%')
+Detail.create(region_id:7,vistum_id:6,data_number:'10,4')
+Detail.create(region_id:7,vistum_id:7,data_number:'654')

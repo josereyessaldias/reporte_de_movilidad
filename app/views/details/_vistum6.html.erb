@@ -1,5 +1,44 @@
 
-<% if @region.id == 7 %>
+<% if @region.id == 6 %>
+	<div id="transporte_no_motorizado_1_valparaiso-ciclovias_kms" class="cuadro-grafico graph_5_6 row mr-0">
+		<div class="col-sm-10 pr-0">
+			<div class='tableauPlaceholder' id='viz1541655456543' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;transporte_no_motorizado_1_valparaiso&#47;ciclovias_kms&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='transporte_no_motorizado_1_valparaiso&#47;ciclovias_kms' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;transporte_no_motorizado_1_valparaiso&#47;ciclovias_kms&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541655456543');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='1527px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<div class="col-sm-2">
+			<div class="cuadro-ayuda">
+				<p>
+					AYUDA
+				</p>
+				<p>
+					<%= @sidebars[0].help_title %>
+				</p>
+				<p>
+					<%= @sidebars[0].help_text %>
+				</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div id="transporte_no_motorizado_2_valparaiso-conteos" class="cuadro-grafico graph_5_6 row">
+			<div class=" col-sm-10">
+				<div class='tableauPlaceholder' id='viz1541655469639' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;transporte_no_motorizado_1_valparaiso&#47;conteos&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='transporte_no_motorizado_1_valparaiso&#47;conteos' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tr&#47;transporte_no_motorizado_1_valparaiso&#47;conteos&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541655469639');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			</div>
+			<div class="col-sm-2">
+				<div class="cuadro-ayuda">
+					<p>
+						AYUDA
+					</p>
+					<p>
+						Flujo de ciclistas en ciclovías
+					</p>
+					<p>
+					En algunas ciclovías del país existen sistemas de conteo que permiten obtener un registro de la cantidad de viajes en bicicleta registrados sobre ellas.
+					</p>
+				</div>
+			</div>
+		</div>
+
+<% elsif @region.id == 7 %>
 
 	<div id="transporte_no_motorizado_1_metropolitana-ciclovias_kms" class="cuadro-grafico graph_13_6 row mr-0">
 		<div class="col-sm-10 pr-0">
