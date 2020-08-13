@@ -70,177 +70,32 @@
 								<div id="select-home" class="row">
 									<div class="col-sm-12 caja-select"> <!--acá empieza caja gris-->
 										<div class="row form-group">
-											<label for="regionSelect" class="col-8">Selecciona tu
-												región para comenzar a explorar la informacion</label> <select
+											<label for="regionSelect" class="col-7">Selecciona tu
+												región para comenzar a explorar la informacion</label>
+
+												<%= select_tag(:city_id, options_from_collection_for_select(Region.all, :id, :name, 7), :class => 'col-5 form-control', :onchange => 'myFunction()') %>
+												
+
+												<!-- <select
 												class="col-4 form-control" id="regionSelect" name="regionSelect">
-											</select>
+											</select> -->
+											
 										</div>
 									</div>
 								</div>
-								<div id="reportes" class="row"><!--aquí la parte de abajo-->
-									<div class="col-sm-6">
-										<div class="panel panel-left"><a href="<%= asset_path detail_path(region_id: 7,vistum_id: 1) %>">
-											<div class="panel-body">
-												<div class="row">
-													<div class="col-7"style="text-align: right">
-														<p class="dato" >132k</p>
-													</div>
-													<div class="col-5">
-														<p class="leyenda-dato">VIAJES DIARIOS EN LA REGIÓN</p>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-1">
-														<i class="fas fa-user-check mono"></i>
-													</div>	
-													<div class="offset-3 col-6"><p class="ir-dato">VER ENCUESTA ORIGEN DESTINO</p>
-													</div>
-													<div class="col-1 dato-flecha">></div>
-												</div> 
-											</div></a>
-										</div>
-									</div>
-									<div class="col-sm-6">
-						 				<div class="panel panel-right"><a href="<%= asset_path detail_path(region_id: 7,vistum_id: 2) %>">
-											<div class="panel-body">
-												<div class="row">
-													<div class="col-7" style="text-align: right">
-														<p class="dato">1,87</p>
-													</div>
-													<div class="col-5">
-														<p class="leyenda-dato">PROMEDIO DE TRANSBORDOS</p>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-1">
-														<i class="fas fa-users mono"></i>
-													</div>		
-													<div class="offset-3 col-6"><p class="ir-dato">VER DEMANDA DE TRANSPORTE PÚBLICO</p>
-													</div>
-													<div class="col-1 dato-flecha">></div>
-												</div>
-											</div></a>
-										</div>
+								<% 7.times do |i| %>
+									<div id="index_<%= i+1%>" style="display:none"><%= render "regions/#{i+1}" %></div>
+								<% end %>
+								
+								
 
-						 			</div>
-						 			<div class="col-sm-6">
-										<div class="panel panel-left"><a href="<%= asset_path detail_path(region_id: 7,vistum_id: 3) %>">
-											<div class="panel-body">
-												<div class="row">
-													<div class="col-7" style="text-align: right">
-														<p class="dato">17</p>
-													</div>
-													<div class="col-5">
-														<p class="leyenda-dato">SERVICIOS DE BUSES EN LA REGIÓN</p>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-1">
-														<i class="fas fa-bus mono"></i>
-													</div>		
-													<div class="offset-3 col-6"><p class="ir-dato">VER OFERTA DE TRANSPORTE PÚBLICO</p>
-													</div>
-													<div class="col-1 dato-flecha">></div>
-												</div>
-											</div></a>
-										</div>
-									</div>
-									<div class="col-sm-6">
-						 				<div class="panel panel-right"><a href="<%= asset_path detail_path(region_id: 7,vistum_id: 4) %>">
-											<div class="panel-body">
-												<div class="row">
-													<div class="col-7" style="text-align: right">
-														<p class="dato">54<span style="font-size: 20px">km/h</span></p>
-													</div>
-													<div class="col-5">
-														<p class="leyenda-dato">VELOCIDAD PROMEDIO</p>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-1">
-														<i class="fas fa-chart-bar mono"></i>
-													</div>		
-													<div class="offset-3 col-6"><p class="ir-dato">VER PERFORMANCE DE TRANSPORTE PÚBLICO</p>
-													</div>
-													<div class="col-1 dato-flecha">></div>
-												</div>
-											</div></a>
-										</div>
-										
-						 			</div>
 
-						 			<div class="col-sm-6">
-										<div class="panel panel-left"><a href="<%= asset_path detail_path(region_id: 7,vistum_id: 5) %>">
-											<div class="panel-body">
-												<div class="row">
-													<div class="col-7" style="text-align: right">
-														<p class="dato">59%</p>
-													</div>
-													<div class="col-5">
-														<p class="leyenda-dato">TASA DE MOTORIZACIÓN</p>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-1">
-														<i class="fas fa-car-alt mono"></i>
-													</div>		
-													<div class="offset-3 col-6"><p class="ir-dato">VER TRANSPORTE PRIVADO</p>
-													</div>
-													<div class="col-1 dato-flecha">></div>
-												</div>
-											</div></a>
-										</div>
-									</div>
-									<div class="col-sm-6">
-						 				<div class="panel panel-right"><a href="<%= asset_path detail_path(region_id: 7,vistum_id: 6) %>">
-											<div class="panel-body">
-												<div class="row">
-													<div class="col-7" style="text-align: right">
-														<p class="dato">10,4<span style="font-size: 20px">km</span></p>
-													</div>
-													<div class="col-5">
-														<p class="leyenda-dato">DE CICLOVÍAS EN LA REGIÓN</p>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-1">
-														<i class="fas fa-bicycle mono"></i>
-													</div>		
-													<div class="offset-3 col-6"><p class="ir-dato">VER TRANSPORTE NO MOTORIZADO</p>
-													</div>
-													<div class="col-1 dato-flecha">></div>
-												</div>
-											</div></a>
-										</div>
-						 			</div>
-						 			<div class="col-sm-6">
-										<div class="panel panel-left"><a href="<%= asset_path detail_path(region_id: 7,vistum_id: 7) %>">
-											<div class="panel-body">
-												<div class="row">
-													<div class="col-7" style="text-align: right">
-														<p class="dato">654</p>
-													</div>
-													<div class="col-5">
-														<p class="leyenda-dato">FALLECIDOS ÚLTIMO PERIODO</p>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-1">
-														<i class="fas fa-car-crash mono"></i>
-													</div>		
-													<div class="offset-3 col-6"><p class="ir-dato">VER SEGURIDA VIAL</p>
-													</div>
-													<div class="col-1 dato-flecha">></div>
-												</div>
-											</div></a>
-										</div>
-									</div>
-
-								</div>
+							
 							</div>
 							<div class="col-1"></div>
 						</div>
 					</div>
+
 
 					<footer class="container-fluid content-footer">
 						<div class="row">
@@ -269,3 +124,29 @@
 			</div>
 		</div>
 
+
+<script>
+	window.onload =  function() {
+		document.getElementById("index_7").style.display = "flex"
+	}
+
+	
+
+
+	function  myFunction() {
+		for (var i = 0; i < 7; i++) { 
+		  document.getElementById(`index_${i+1}`).style.display = "none";
+		}
+		
+
+		var city = document.getElementById('city_id').value;
+
+		for (var j = 0; j < 7; j++) { 
+			if (city === `${j+1}`) {
+				document.getElementById(`index_${j+1}`).style.display = "flex";
+			} 
+		}
+		
+	}
+
+</script>
