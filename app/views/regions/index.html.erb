@@ -69,11 +69,11 @@
 							<div class="col-10">
 								<div id="select-home" class="row">
 									<div class="col-sm-12 caja-select"> <!--acá empieza caja gris-->
-										<div class="row form-group">
+										<div class="row form-group ala">
 											<label for="regionSelect" class="col-7">Selecciona tu
 												región para comenzar a explorar la informacion</label>
 
-												<%= select_tag(:city_id, options_from_collection_for_select(Region.all, :id, :name, 7), :class => 'col-5 form-control', :onchange => 'myFunction()') %>
+												<%= select_tag(:city_id, options_from_collection_for_select(@region, :id, :name, @region_init), :class => 'col-5 form-control ala', :onchange => 'myFunction()') %>
 												
 
 												<!-- <select
@@ -83,8 +83,12 @@
 										</div>
 									</div>
 								</div>
-								<% 7.times do |i| %>
-									<div id="index_<%= i+1%>" style="display:none"><%= render "regions/#{i+1}" %></div>
+								<% 8.times do |i| %>
+									<% if @region_init.to_i == i+1 %>
+										<div id="index_<%= i+1%>" style="display:flex"><%= render "regions/#{i+1}" %></div>
+									<% else %>
+										<div id="index_<%= i+1%>" style="display:none"><%= render "regions/#{i+1}" %></div>
+									<% end %>
 								<% end %>
 								
 								
@@ -127,21 +131,15 @@
 
 <script>
 	
-	window.onload = function() {
-		document.getElementById("index_7").style.display = "flex"
-	}
-	
-
-
 	function  myFunction() {
-		for (var i = 0; i < 7; i++) { 
+		for (var i = 0; i < 8; i++) { 
 		  document.getElementById(`index_${i+1}`).style.display = "none";
 		}
 		
 
 		var city = document.getElementById('city_id').value;
 
-		for (var j = 0; j < 7; j++) { 
+		for (var j = 0; j < 8; j++) { 
 			if (city === `${j+1}`) {
 				document.getElementById(`index_${j+1}`).style.display = "flex";
 			} 

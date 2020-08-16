@@ -22,11 +22,12 @@
 			<ul>
 
 				<li>
-					<select class="form-control" id="regionSelect" name="regionSelect"></select>
+					<!-- <select class="form-control" id="regionSelect" name="regionSelect"></select> -->
+					<%= select_tag(:city_id, options_from_collection_for_select(@active_region, :id, :name, @region.id), :class => 'form-control', :style => 'font-size:10px', :onchange => 'detailFunction()') %>
 				</li>
 
 				<li>
-					<a href="<%= asset_path regions_index_path %>"><div class="row">
+					<a href="<%= asset_path root_path(:region => @region.id) %>"><div class="row">
 						<i class="fas fa-home col-1 mt-1"></i><span class="col-11">INICIO</span>
 					</div></a>
 				</li>
@@ -34,13 +35,19 @@
 				<% if @vistum.id == 1 %>
 				<li class="active">
 					<div class="row">
-						<i class="fas fa-user-check col-1"></i><span class="col-11">Encuesta Origen Destino</span>
+						<i class="<%= @vista[0].logo %> col-1"></i><span class="col-11">Encuesta Origen Destino</span>
 					</div>
 				</li>
+				<% elsif @region.dataone == nil %>
+					<li class="empty">
+						<div class="row">
+							<i class="<%= @vista[0].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+						</div>
+					</li>
 				<% else %> 
 				<li>
-					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 1) %>"><div class="row">
-						<i class="fas fa-user-check col-1"></i><span class="col-11">Encuesta Origen Destino</span>
+					<a href="<%= asset_path detail_path(region_id: @region.id,vistum_id: 1) %>"><div class="row">
+						<i class="<%= @vista[0].logo %> col-1"></i><span class="col-11">Encuesta Origen Destino</span>
 					</div></a>
 				</li>
 				<% end %>
@@ -48,13 +55,19 @@
 				<% if @vistum.id == 2 %> 
 				<li class="active">
 					<div class="row">
-						<i class="fas fa-users col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+						<i class="<%= @vista[1].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
 					</div>
 				</li>
+				<% elsif @region.datatwo == nil %>
+					<li class="empty">
+						<div class="row">
+							<i class="<%= @vista[1].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+						</div>
+					</li>
 				<% else %>
 					<li>
-					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 2) %>"><div class="row">
-						<i class="fas fa-users col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+					<a href="<%= asset_path detail_path(region_id: @region.id,vistum_id: 2) %>"><div class="row">
+						<i class="<%= @vista[1].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
 					</div></a>
 				</li>
 				<% end %>
@@ -62,13 +75,19 @@
 				<% if @vistum.id == 3 %> 
 				<li class="active">
 					<div class="row">
-						<i class="fas fa-bus col-1"></i><span class="col-11">Oferta de Transporte Público</span>
+						<i class="<%= @vista[2].logo %> col-1"></i><span class="col-11">Oferta de Transporte Público</span>
 					</div>
 				</li>
+				<% elsif @region.datathree == nil %>
+					<li class="empty">
+						<div class="row">
+							<i class="<%= @vista[2].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+						</div>
+					</li>
 				<% else %>
 				<li>
-					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 3) %>"><div class="row">
-						<i class="fas fa-bus col-1"></i><span class="col-11">Oferta de Transporte Público</span>
+					<a href="<%= asset_path detail_path(region_id: @region.id,vistum_id: 3) %>"><div class="row">
+						<i class="<%= @vista[2].logo %> col-1"></i><span class="col-11">Oferta de Transporte Público</span>
 					</div></a>
 				</li>
 				<% end %>
@@ -76,13 +95,19 @@
 				<% if @vistum.id == 4 %>
 				<li class="active">
 					<div class="row">
-						<i class="fas fa-chart-bar col-1"></i><span class="col-11">Performance de Transporte Público</span>
+						<i class="<%= @vista[3].logo %> col-1"></i><span class="col-11">Performance de Transporte Público</span>
 					</div>
 				</li>
+				<% elsif @region.datafour == nil %>
+					<li class="empty">
+						<div class="row">
+							<i class="<%= @vista[3].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+						</div>
+					</li>
 				<% else %> 
 				<li>
-					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 4) %>"><div class="row">
-						<i class="fas fa-chart-bar col-1"></i><span class="col-11">Performance de Transporte Público</span>
+					<a href="<%= asset_path detail_path(region_id: @region.id,vistum_id: 4) %>"><div class="row">
+						<i class="<%= @vista[3].logo %> col-1"></i><span class="col-11">Performance de Transporte Público</span>
 					</div></a>
 				</li>
 				<% end %>
@@ -90,13 +115,19 @@
 				<% if @vistum.id == 5 %> 
 				<li class="active">
 					<div class="row">
-						<i class="fas fa-car-alt col-1"></i><span class="col-11">Transporte Privado</span>
+						<i class="<%= @vista[4].logo %> col-1"></i><span class="col-11">Transporte Privado</span>
 					</div>
 				</li>
+				<% elsif @region.datafive == nil %>
+					<li class="empty">
+						<div class="row">
+							<i class="<%= @vista[4].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+						</div>
+					</li>
 				<% else %>
 				<li>
-					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 5) %>"><div class="row">
-						<i class="fas fa-car-alt col-1 mt-1"></i><span class="col-11">Transporte Privado</span>
+					<a href="<%= asset_path detail_path(region_id: @region.id,vistum_id: 5) %>"><div class="row">
+						<i class="<%= @vista[4].logo %> col-1 mt-1"></i><span class="col-11">Transporte Privado</span>
 					</div></a>
 				</li>
 				<% end %>
@@ -104,13 +135,19 @@
 				<% if @vistum.id == 6 %> 
 				<li class="active">
 					<div class="row">
-						<i class="fas fa-bicycle col-1"></i><span class="col-11">Transporte No Motorizado</span>
+						<i class="<%= @vista[5].logo %> col-1"></i><span class="col-11">Transporte No Motorizado</span>
 					</div>
 				</li>
+				<% elsif @region.datasix == nil %>
+					<li class="empty">
+						<div class="row">
+							<i class="<%= @vista[5].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+						</div>
+					</li>
 				<% else %>
 				<li>
-					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 6) %>"><div class="row">
-						<i class="fas fa-bicycle col-1"></i><span class="col-11">Transporte No Motorizado</span>
+					<a href="<%= asset_path detail_path(region_id: @region.id,vistum_id: 6) %>"><div class="row">
+						<i class="<%= @vista[5].logo %> col-1"></i><span class="col-11">Transporte No Motorizado</span>
 					</div></a>
 				</li>
 				<% end %>
@@ -118,13 +155,19 @@
 				<% if @vistum.id == 7 %> 
 				<li class="active">
 					<div class="row">
-						<i class="fas fa-car-crash col-1"></i><span class="col-11">Seguridad Vial</span>
+						<i class="<%= @vista[6].logo %> col-1"></i><span class="col-11">Seguridad Vial</span>
 					</div>
 				</li>
+				<% elsif @region.dataseven == nil %>
+					<li class="empty">
+						<div class="row">
+							<i class="<%= @vista[6].logo %> col-1"></i><span class="col-11">Demanda de Transporte Público</span>
+						</div>
+					</li>
 				<% else %>
 				<li>
-					<a href="<%= asset_path detail_path(region_id: 7,vistum_id: 7) %>"><div class="row">
-						<i class="fas fa-car-crash col-1 mt-1"></i><span class="col-11">Seguridad Vial</span>
+					<a href="<%= asset_path detail_path(region_id: @region.id,vistum_id: 7) %>"><div class="row">
+						<i class="<%= @vista[6].logo %> col-1 mt-1"></i><span class="col-11">Seguridad Vial</span>
 					</div></a>
 				</li>
 				<% end %>
@@ -143,7 +186,7 @@
 			<div class="row mr-0 pr-0">
 				<div class="col-10">
 					<div class="titulo-detalle">
-						<i class="fas fa-users" style="color:#e93f42"></i> <%= @vistum.category %>
+						<i class="<%= @vistum.logo %>" style="color:#e93f42"></i> <%= @vistum.category %>
 					</div>
 					<div class="texto-detalle">
 						<%= @vistum.bajada %>
@@ -164,4 +207,9 @@
 	</div>
 
 </div>
-
+<script>
+	function  detailFunction() {
+		var city = document.getElementById('city_id').value;
+		window.location.href = `../${city}/<%= @vistum.id %>`
+	}
+</script>

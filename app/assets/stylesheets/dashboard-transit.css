@@ -116,6 +116,9 @@ div.content-home .caja-select select{
 	background-color: #583971;
 	text-transform: uppercase;
 }
+.ala option:nth-of-type(1){
+    background-color: green !important;
+}
 div.content-home .caja{
 	font-size: 15px;
 	font-weight: 700;
@@ -233,6 +236,11 @@ div.content-home .caja a{
 
 .sidebar .active {
 	background-color: #583971;
+	/*   color: #ffffff; */
+}
+.sidebar .empty {
+
+	color:#583971;
 	/*   color: #ffffff; */
 }
 .sidebar div {

@@ -1,11 +1,11 @@
-<% @reg = 2 %>
+<% @reg = 8 %>
 <div class="row"><!--aquí la parte de abajo-->
 									<div class="col-sm-6">
-										<div class="panel panel-left"><a href="<%= asset_path detail_path(region_id: @reg,vistum_id: 1) %>">
+										<div class="panel panel-left"><a href="<%= asset_path detail_path(region_id: @reg,vistum_id: 3) %>">
 											<div class="panel-body">
 												<div class="row">
 													<div class="col-7"style="text-align: right">
-														<p class="dato" ><%= @region[1].dataone %></p>
+														<p class="dato" ><%= @region[7].datathree %></p>
 													</div>
 													<div class="col-5">
 														<p class="leyenda-dato">VIAJES DIARIOS EN LA REGIÓN</p>
@@ -13,9 +13,9 @@
 												</div>
 												<div class="row">
 													<div class="col-1">
-														<i class="fas fa-user-check mono"></i>
+														<i class="fas fa-bus mono"></i>
 													</div>	
-													<div class="offset-3 col-6"><p class="ir-dato">VER ENCUESTA ORIGEN DESTINO</p>
+													<div class="offset-3 col-6"><p class="ir-dato">VER OFERTA DE TRANSPORTE PÚBLICO</p>
 													</div>
 													<div class="col-1 dato-flecha">></div>
 												</div> 
@@ -27,7 +27,7 @@
 											<div class="panel-body">
 												<div class="row">
 													<div class="col-7" style="text-align: right">
-														<p class="dato"><%= @region[1].datafive %></p>
+														<p class="dato"><%= @region[7].datafive %></p>
 													</div>
 													<div class="col-5">
 														<p class="leyenda-dato">TASA DE MOTORIZACIÓN</p>
@@ -51,7 +51,7 @@
 											<div class="panel-body">
 												<div class="row">
 													<div class="col-7" style="text-align: right">
-														<p class="dato"><%= @region[1].datasix %><span style="font-size: 20px">km</span></p>
+														<p class="dato"><%= @region[7].datasix %><span style="font-size: 20px">km</span></p>
 													</div>
 													<div class="col-5">
 														<p class="leyenda-dato">DE CICLOVÍAS EN LA REGIÓN</p>
@@ -73,7 +73,7 @@
 											<div class="panel-body">
 												<div class="row">
 													<div class="col-7" style="text-align: right">
-														<p class="dato"><%= @region[1].dataseven %></p>
+														<p class="dato"><%= @region[7].dataseven %></p>
 													</div>
 													<div class="col-5">
 														<p class="leyenda-dato">FALLECIDOS ÚLTIMO PERIODO</p>
