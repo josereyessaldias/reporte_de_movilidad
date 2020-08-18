@@ -19,9 +19,9 @@ Region.create(name: "Región del Maule", order:9, datathree: '...', datafive:'..
 Region.create(name: "Región de Ñuble", order:10)
 Region.create(name: "Región del Bio-Bío", order:11, dataone: '...',datathree: '...', datafive:'...', datasix: '...', dataseven: '237')
 Region.create(name: "Región de la Araucanía", order:12, dataone: '...',datathree: '...', datafive:'...', datasix: '...', dataseven: '155')
+Region.create(name: "Región de los Ríos", order:13, dataone: '...', datathree: '...', datafive:'...', datasix: '...', dataseven: '63')
+Region.create(name: "Región de los Lagos", order:14, dataone: '...', datafive:'...', datasix: '...', dataseven: '117')
 
-# Region.create(name: "Región de los Ríos", order:13)
-# Region.create(name: "Región de los Lagos", order:14)
 # Region.create(name: "Región de Aysén", order:15)
 # Region.create(name: "Región de Magallanes", order:16)
 

@@ -6,7 +6,7 @@ class RegionsController < ApplicationController
 	else
 		@region_init = 10
 		until @region_init != 10 do
-			@region_init = rand(12)+1
+			@region_init = rand(14)+1
 		end
 	end
   end

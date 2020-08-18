@@ -1359,4 +1359,274 @@
 		</div>
 	</div>
 
+<% elsif @region.id == 13 %>
+	<div id="eod_1_los_rios-dash_1" class="cuadro-grafico graph_14_1 row mr-0">
+		<div class=" col-sm-10 pr-0">
+		<div class='tableauPlaceholder' id='viz1545010071455' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;eo&#47;eod_1_los_rios&#47;dash_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='eod_1_los_rios&#47;dash_1' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;eo&#47;eod_1_los_rios&#47;dash_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1545010071455');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='2027px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<div class="col-sm-2">
+			<div style="margin-bottom: 359px">
+				<div class="cuadro-ayuda">
+					<p>
+						AYUDA
+					</p>
+					<p>
+						<%= @sidebars[0].help_title %>
+					</p>
+					<p>
+						<%= @sidebars[0].help_text %>
+					</p>
+					<br>
+				</div>
+			</div>
+			<div style="margin-bottom: 112px">
+				<div class="cuadro-dato">
+					<p>
+						<%= @sidebars[1].data_title %>
+					</p>
+					<p>
+						<%= @sidebars[1].data_text %>
+					</p>
+					<p th:text="${help1} ">..</p>
+				</div>
+
+				<div class="cuadro-ayuda">
+					<p>
+						AYUDA
+					</p>
+					<p>
+						<%= @sidebars[1].help_title %>
+					</p>
+					<p>
+						<%= @sidebars[1].help_text %>
+					</p>
+				</div>
+			</div>
+			
+			
+			<div style="margin-bottom: 129px">
+				<div class="cuadro-dato">
+					<p>
+						<%= @sidebars[3].data_title %>
+					</p>
+					<p>
+						<%= @sidebars[3].data_text %>
+					</p>
+					<p th:text="${help3} ">..</p>
+				</div>
+				<div class="cuadro-ayuda">
+					<p>
+						AYUDA
+					</p>
+					<p>
+						<%= @sidebars[3].help_title %>
+					</p>
+					<p>
+						<%= @sidebars[3].help_text %>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div id="eod_1_los_rios-particion_modal" class="cuadro-grafico graph_14_1 row mr-0">
+		<div class=" col-sm-10 pr-0">
+			<div class='tableauPlaceholder' id='eod_1_los_rios-particion_modal' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_rios&#47;particion_modal&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='eod_1_los_rios&#47;particion_modal' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_rios&#47;particion_modal&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('eod_1_los_rios-particion_modal');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<div class="col-sm-2">
+			<div class="cuadro-ayuda">
+				<p>
+					AYUDA
+				</p>
+				<p>
+					<%= @sidebars[4].help_title %>
+				</p>
+				<p>
+					<%= @sidebars[4].help_text %>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="eod_1_los_rios-matriz" class="cuadro-grafico graph_14_1 row mr-0">
+		<div class=" col-sm-10 pr-0">
+<!-- 				<div class='tableauPlaceholder' id='viz1541560246514' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;demanda_1_metropolitana&#47;viajes_etapas&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='demanda_1_metropolitana&#47;viajes_etapas' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;demanda_1_metropolitana&#47;viajes_etapas&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541560246514');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+			<div class='tableauPlaceholder' id='eod_1_los_rios-matriz' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_rios&#47;matriz&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='eod_1_los_rios&#47;matriz' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_rios&#47;matriz&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('eod_1_los_rios-matriz');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="cuadro-ayuda">
+				<p>
+					AYUDA
+				</p>
+				<p>
+					<%= @sidebars[5].help_title %>
+				</p>
+				<p>
+					<%= @sidebars[5].help_text %>
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="eod_1_los_rios-generacion_zona" class="cuadro-grafico graph_14_1 row mr-0">
+		<div class=" col-sm-10 pr-0">
+			<div class='tableauPlaceholder' id='eod_1_los_rios-generacion_zona' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_rios&#47;generacion_zona&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='eod_1_los_rios&#47;generacion_zona' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_rios&#47;generacion_zona&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('eod_1_los_rios-generacion_zona');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<div class="col-sm-2">
+			<div class="cuadro-ayuda">
+				<p>
+					AYUDA
+				</p>
+				<p>
+					<%= @sidebars[6].help_title %>
+				</p>
+				<p>
+					<%= @sidebars[6].help_text %>
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+
+<% elsif @region.id == 14 %>
+	<div id="eod_1_los_lagos-dash_1" class="cuadro-grafico graph_10_1 row mr-0">
+		<div class=" col-sm-10 pr-0">
+		<div class='tableauPlaceholder' id='viz1545010217476' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;eo&#47;eod_1_los_lagos&#47;dash_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='eod_1_los_lagos&#47;dash_1' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;eo&#47;eod_1_los_lagos&#47;dash_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1545010217476');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='2027px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<div class="col-sm-2">
+			<div style="margin-bottom: 359px">
+				<div class="cuadro-ayuda">
+					<p>
+						AYUDA
+					</p>
+					<p>
+						<%= @sidebars[0].help_title %>
+					</p>
+					<p>
+						<%= @sidebars[0].help_text %>
+					</p>
+					<br>
+				</div>
+			</div>
+			<div style="margin-bottom: 112px">
+				<div class="cuadro-dato">
+					<p>
+						<%= @sidebars[1].data_title %>
+					</p>
+					<p>
+						<%= @sidebars[1].data_text %>
+					</p>
+					<p th:text="${help1} ">..</p>
+				</div>
+
+				<div class="cuadro-ayuda">
+					<p>
+						AYUDA
+					</p>
+					<p>
+						<%= @sidebars[1].help_title %>
+					</p>
+					<p>
+						<%= @sidebars[1].help_text %>
+					</p>
+				</div>
+			</div>
+			
+			
+			<div style="margin-bottom: 129px">
+				<div class="cuadro-dato">
+					<p>
+						<%= @sidebars[3].data_title %>
+					</p>
+					<p>
+						<%= @sidebars[3].data_text %>
+					</p>
+					<p th:text="${help3} ">..</p>
+				</div>
+				<div class="cuadro-ayuda">
+					<p>
+						AYUDA
+					</p>
+					<p>
+						<%= @sidebars[3].help_title %>
+					</p>
+					<p>
+						<%= @sidebars[3].help_text %>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div id="eod_1_los_lagos-particion_modal" class="cuadro-grafico graph_10_1 row mr-0">
+		<div class=" col-sm-10 pr-0">
+			<div class='tableauPlaceholder' id='eod_1_los_lagos-particion_modal' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_lagos&#47;particion_modal&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='eod_1_los_lagos&#47;particion_modal' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_lagos&#47;particion_modal&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('eod_1_los_lagos-particion_modal');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<div class="col-sm-2">
+			<div class="cuadro-ayuda">
+				<p>
+					AYUDA
+				</p>
+				<p>
+					<%= @sidebars[4].help_title %>
+				</p>
+				<p>
+					<%= @sidebars[4].help_text %>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="eod_1_los_lagos-matriz" class="cuadro-grafico graph_10_1 row mr-0">
+		<div class=" col-sm-10 pr-0">
+<!-- 				<div class='tableauPlaceholder' id='viz1541560246514' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;demanda_1_metropolitana&#47;viajes_etapas&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='demanda_1_metropolitana&#47;viajes_etapas' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;de&#47;demanda_1_metropolitana&#47;viajes_etapas&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1541560246514');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+			<div class='tableauPlaceholder' id='eod_1_los_lagos-matriz' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_lagos&#47;matriz&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='eod_1_los_lagos&#47;matriz' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_lagos&#47;matriz&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('eod_1_los_lagos-matriz');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="cuadro-ayuda">
+				<p>
+					AYUDA
+				</p>
+				<p>
+					<%= @sidebars[5].help_title %>
+				</p>
+				<p>
+					<%= @sidebars[5].help_text %>
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="eod_1_los_lagos-generacion_zona" class="cuadro-grafico graph_10_1 row mr-0">
+		<div class=" col-sm-10 pr-0">
+			<div class='tableauPlaceholder' id='eod_1_los_lagos-generacion_zona' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_lagos&#47;generacion_zona&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='eod_1_los_lagos&#47;generacion_zona' /><param name='tabs' value='no' /><param name='showShareOptions' value='false' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;se&#47;eod_1_los_lagos&#47;generacion_zona&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('eod_1_los_lagos-generacion_zona');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+		</div>
+		<div class="col-sm-2">
+			<div class="cuadro-ayuda">
+				<p>
+					AYUDA
+				</p>
+				<p>
+					<%= @sidebars[6].help_title %>
+				</p>
+				<p>
+					<%= @sidebars[6].help_text %>
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+
 <% end %>
