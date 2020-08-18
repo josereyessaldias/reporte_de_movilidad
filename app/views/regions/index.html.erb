@@ -83,7 +83,7 @@
 										</div>
 									</div>
 								</div>
-								<% 14.times do |i| %>
+								<% 16.times do |i| %>
 									<% if @region_init.to_i == i+1 %>
 										<div id="index_<%= i+1%>" style="display:flex"><%= render "regions/#{i+1}" %></div>
 									<% else %>
@@ -132,14 +132,14 @@
 <script>
 	
 	function  myFunction() {
-		for (var i = 0; i < 14; i++) { 
+		for (var i = 0; i < 16; i++) { 
 		  document.getElementById(`index_${i+1}`).style.display = "none";
 		}
 		
 
 		var city = document.getElementById('city_id').value;
 
-		for (var j = 0; j < 14; j++) { 
+		for (var j = 0; j < 16; j++) { 
 			if (city === `${j+1}`) {
 				document.getElementById(`index_${j+1}`).style.display = "flex";
 			} 

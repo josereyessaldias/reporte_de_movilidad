@@ -21,9 +21,8 @@ Region.create(name: "Región del Bio-Bío", order:11, dataone: '...',datathree: 
 Region.create(name: "Región de la Araucanía", order:12, dataone: '...',datathree: '...', datafive:'...', datasix: '...', dataseven: '155')
 Region.create(name: "Región de los Ríos", order:13, dataone: '...', datathree: '...', datafive:'...', datasix: '...', dataseven: '63')
 Region.create(name: "Región de los Lagos", order:14, dataone: '...', datafive:'...', datasix: '...', dataseven: '117')
-
-# Region.create(name: "Región de Aysén", order:15)
-# Region.create(name: "Región de Magallanes", order:16)
+Region.create(name: "Región de Aysén", order:15, datafive: '...', datasix: '...', dataseven: '5')
+Region.create(name: "Región de Magallanes", order:16, datafive: '...', datasix: '...', dataseven: '27')
 
 Vistum.create(category: "Encuesta Origen Destino", order:1, bajada:"Encuesta Origen Destino (EOD) muestra una síntesis de los resultados de distintas versiones de dicha encuesta para varias ciudades del país. Ella es extensiva ya que observa los distintos viajes de los ciudadanos y los distintos modos de transporte que se ocupan.",logo:'fas fa-user-check')
 Vistum.create(category: "Demanda de Transporte Público", order:2, bajada:"Esta vista busca mostrar tendencias de la demanda agregada y respecto a operadores/ líneas de metro. También tiene una vista que muestra un evolutivo de la evasión.", logo:'fas fa-users')
