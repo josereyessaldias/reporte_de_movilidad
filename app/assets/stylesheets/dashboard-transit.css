@@ -116,9 +116,10 @@ div.content-home .caja-select select{
 	background-color: #583971;
 	text-transform: uppercase;
 }
-.ala option:nth-of-type(2){
+
+/*.ala option:nth-of-type(2){
     background-color: green !important;
-}
+} */
 div.content-home .caja{
 	font-size: 15px;
 	font-weight: 700;
