@@ -52,7 +52,7 @@ div.content-tittle {
 /* 	letter-spacing: 4px;	 */
 /* 	line-height: 24px; */
 /* 	background-color: #44255F; */
-	background-image: url(fondo-home.png);
+	background-image: url("fondo-home.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
