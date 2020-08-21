@@ -257,11 +257,11 @@ div.content-home .caja a{
 	font-size: 14px;
 }
 
-
+/* 
 .sidebar a:hover:not (.active ) {
 	background-color: #583971;
-	/*   color: white; */
-}
+	   color: white; 
+}*/
 /* FIN SIDEBAR */
 /* DETALLES REPORTES */
 div.cabecera-detalle {
