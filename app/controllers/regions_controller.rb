@@ -4,10 +4,11 @@ class RegionsController < ApplicationController
     if params[:region] != nil
 	    @region_init = params[:region]
 	else
-		@region_init = 10
-		until @region_init != 10 do
-			@region_init = rand(16)+1
-		end
+		# @region_init = 10
+		# until @region_init != 10 do
+		# 	@region_init = rand(16)+1
+		# end
+		@region_init = 1
 	end
   end
 end
