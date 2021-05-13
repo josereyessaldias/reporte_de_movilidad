@@ -116,6 +116,10 @@ div.content-home .caja-select select{
 	background-color: #583971;
 	text-transform: uppercase;
 }
+.provisional_select {
+	width: 300px;
+	padding-left: 30px;
+}
 
 /*.ala option:nth-of-type(2){
     background-color: green !important;

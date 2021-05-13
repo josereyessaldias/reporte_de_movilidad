@@ -23,7 +23,8 @@
 
 				<li>
 					<!-- <select class="form-control" id="regionSelect" name="regionSelect"></select> -->
-					<%= select_tag(:city_id, options_from_collection_for_select(@active_region, :id, :name, @region.id), :class => 'form-control', :style => 'font-size:10px', :onchange => 'detailFunction()') %>
+					<!--<%= select_tag(:city_id, options_from_collection_for_select(@active_region, :id, :name, @region.id), :class => 'form-control', :style => 'font-size:10px', :onchange => 'detailFunction()') %>-->
+					<%= select_tag "beta", raw("<option> Región Metropolitana</option>"), :class => 'form-control', :style => 'font-size:10px' %>
 				</li>
 
 				<li>

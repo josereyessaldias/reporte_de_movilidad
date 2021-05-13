@@ -73,8 +73,9 @@
 											<label for="regionSelect" class="col-7">Selecciona tu
 												región para comenzar a explorar la informacion</label>
 
-												<%= select_tag(:city_id, options_from_collection_for_select(@region.where.not(id:10), :id, :name, @region_init), :class => 'col-5 form-control ala', :onchange => 'myFunction()') %>
+												<!--<%= select_tag(:city_id, options_from_collection_for_select(@region.where.not(id:10), :id, :name, @region_init), :class => 'col-5 form-control ala', :onchange => 'myFunction()') %>-->
 												
+												<%= select_tag "beta", raw("<option> Región Metropolitana</option>"), :class => 'provisional_select' %>
 
 												<!-- <select
 												class="col-4 form-control" id="regionSelect" name="regionSelect">
