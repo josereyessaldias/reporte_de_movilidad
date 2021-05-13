@@ -8,7 +8,7 @@ class RegionsController < ApplicationController
 		# until @region_init != 10 do
 		# 	@region_init = rand(16)+1
 		# end
-		@region_init = 1
+		@region_init = 7
 	end
   end
 end
