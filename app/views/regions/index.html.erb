@@ -57,7 +57,7 @@
 									<div class="med pt-2 pl-1">BIENVENIDO AL</div>
 									<div class="big pl-1 pr-2">REPORTE DE MOVILIDAD</div>
 									<div class="med pb-2 pl-1">URBANA DE CHILE</div>
-									<i class="pl-1">Versión Beta. Datos sólo RM.</i>
+									<!--<i class="pl-1">Versión Beta. Datos sólo RM.</i>-->
 								</div>
 							</div>
 							<div class="row" style="padding-bottom: 100px;">
@@ -75,12 +75,14 @@
 								<div id="select-home" class="row">
 									<div class="col-sm-12 caja-select"> <!--acá empieza caja gris-->
 										<div class="row form-group ala">
-											<label for="regionSelect" class="col-7">Selecciona tu
-												región para comenzar a explorar la informacion</label>
+											<!--<label for="regionSelect" class="col-7">Selecciona tu
+												región para comenzar a explorar la informacion</label>-->
+											<label for="regionSelect" class="col-7">Versión Beta. Datos sólo para la Región Metropolitana</label>
 
 												<!--<%= select_tag(:city_id, options_from_collection_for_select(@region.where.not(id:10), :id, :name, @region_init), :class => 'col-5 form-control ala', :onchange => 'myFunction()') %>-->
 												
-												<%= select_tag "beta", raw("<option> Región Metropolitana</option>"), :class => 'provisional_select' %>
+												<!--<%= select_tag "beta", raw("<option> Región Metropolitana</option>"), :class => 'provisional_select' %>-->
+												<button class="provisional_select_2">REGIÓN METROPOLITANA</button>
 
 												<!-- <select
 												class="col-4 form-control" id="regionSelect" name="regionSelect">
