@@ -68,11 +68,12 @@ div.content-tittle .row {
     padding-left: 60px;
 }
 div.content-tittle .sma{
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: 4px;
-	line-height: 30px;
-	width: 45%;
-	font-weight: 700;
+	line-height: 25px;
+	width: 75%;
+
+	background-color: rgba(68,37,95,1);
 }
 div.content-tittle .med{
 	font-size: 28px;
