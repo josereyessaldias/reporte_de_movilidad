@@ -13,7 +13,7 @@ Region.create(name: "Región de Antofagasta", order:3,  dataone: '831',datathree
 Region.create(name: "Región de Copiapó", order:4, dataone: '418', datafive:'32%', datasix: '35,0', dataseven: '45')
 Region.create(name: "Región de Coquimbo", order:5, dataone: '928',datathree: '18', datafive:'27%', datasix: '28,6', dataseven: '69')
 Region.create(name: "Región de Valparaíso", order:6, dataone: '2,3',datathree: '107', datafive:'28%', datasix: '20,8', dataseven: '149')
-Region.create(name: "Región Metropolitana", order:7,dataone: '18,5',datatwo:'1,46',datathree: '382', datafour:'18,6', datafive:'28%', datasix: '709,28', dataseven: '378')
+Region.create(name: "Región Metropolitana", order:7,dataone: '18,5',datatwo:'1,46',datathree: '382', datafour:'18,6', datafive:'28%', datasix: '709,3', dataseven: '378')
 Region.create(name: "Región de O'Higgins", order:8, datathree: '18', datafive:'30%', datasix: '64,7', dataseven: '130')
 Region.create(name: "Región del Maule", order:9, datathree: '13', datafive:'32%', datasix: '31,2', dataseven: '163')
 Region.create(name: "Región de Ñuble", order:10)
