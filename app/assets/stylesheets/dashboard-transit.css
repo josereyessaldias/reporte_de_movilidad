@@ -408,6 +408,33 @@ div.botones-navegacion .btn-right{
 	background-color: #583971;
 	padding-top: 15px;
 }
+
+.cuadro-info-titulo {
+	color: #580060;
+	font-family: Montserrat;
+	padding-bottom: 0px !important;
+	padding-top: 0px !important;
+	font-size: 12px !important;
+	font-weight: 600;
+	text-decoration: none;
+}
+.cuadro-info-titulo:hover {
+	color:#e93f42;
+	text-decoration: none;
+}
+.cuadro-info-titulo:visited {
+	color:#e93f42;
+	text-decoration: none !important;
+}
+.cuadro-info {
+	color: #580060;
+	background-color: #FFF;
+	margin-bottom: 0px !important;
+	font-family: Montserrat;
+	font-size: 12px !important;
+}
+
+
 /* FIN DETALLES REPORTES */
 
 .btn-go-top {
