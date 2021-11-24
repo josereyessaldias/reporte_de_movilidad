@@ -33,7 +33,7 @@
 					
 
 					<nav class="navbar menu-uc-superior">
-						<a class="navbar-brand pt-0" style="margin-left:5.3%;margin-top:50px" href="https://www.uc.cl">
+						<a class="navbar-brand pt-0" style="margin-left:5.3%;margin-top:50px" href="https://www.uc.cl" target="_blank">
 							<img src=<%= asset_path 'logo-uc-wh.png' %>>
 						</a>
 						<div style="width: 60%">
@@ -113,21 +113,24 @@
 
 					<footer class="container-fluid content-footer">
 						<div class="row">
-							<div class="offset-2 col-3">
-								<p>¿TIENES UNA SUGERENCIA O SOLICITUD?</p>
+							<div class="offset-1 col-3">
+								<p style="text-align: center;">¿TIENES UNA SUGERENCIA O SOLICITUD?</p>
 							</div>
-							<div class="col-2 rojo">
+							<div class="col-2 rojo pt-3">
 									<a th:href="@{/contacto}">CONTÁCTANOS</a>
 									<br>
-									<a th:href="@{/bibliografia}">BIBLIOGRAFÍA</a>
+									<!--<a th:href="@{/bibliografia}">BIBLIOGRAFÍA</a>-->
 							</div>
-							<div class="col-4">
+							<div class="col-5">
 								<div class="row">
 									<div class="col-4">
-										<img alt="" class="img-fluid" src=<%= asset_path"cedeus.png"%> style="max-height:60px;">
+										<a href="https://www.ing.uc.cl/transporte-y-logistica/" target="_blank"><img alt="" class="img-fluid" src=<%= asset_path"ditl2.png"%> style="max-height:70px;"></a>
 									</div>
 									<div class="col-4">
-										<img alt="" class="img-fluid" src=<%= asset_path"brt.png"%> style="max-height:60px;">
+										<a href="https://www.cedeus.cl/" target="_blank"><img alt="" class="img-fluid" src=<%= asset_path"cedeus.png"%> style="max-height:55px;"></a>
+									</div>
+									<div class="col-4 pt-0">
+										<a href="http://www.brt.cl/" target="_blank"><img alt="" class="img-fluid" src=<%= asset_path"brt.png"%> style="max-height:48px;"></a>
 									</div>
 								</div>
 							</div>
