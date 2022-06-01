@@ -30,7 +30,7 @@ Vistum.create(category: "Oferta de Transporte Público", order:3, bajada:"Esta v
 Vistum.create(category: "Performance de Transporte Público", order:4, bajada:"La vista Performance del Transporte Público muestra indicadores de la calidad del servicio ofrecido. Para ello se enfoca en indicadores objetivos de operación que inciden directamente en la calidad percibida por los usuarios.", logo:'fas fa-chart-bar')
 Vistum.create(category: "Transporte Privado", order:5, bajada:"Esta vista muestra el estatus del transporte por vehículos motorizados particulares. Incluye información de las principales autopistas urbanas.", logo:'fas fa-car-alt')
 Vistum.create(category: "Transporte No Motorizado", order:6, bajada:"Esta vista muestra información sobre el transporte no motorizados (bicicleta y caminata).", logo:'fas fa-bicycle')
-Vistum.create(category: "Seguridad Vial", order:7, bajada:"La seguridad vial se refiere al estudio de los efectos del transporte sobre la salud de las personas, con especial énfasis en los accidentes de tránsito. Aquí se muestra información recolectada por CONASET en donde se detallan accidentes, fatalidades a causa de accidentes y sus causas.",logo:'fas fa-car-crash')
+Vistum.create(category: "Seguridad Vial", order:7, bajada:"La seguridad vial se refiere al conjunto de disposiciones para resguardar la integridad de las personas, con especial énfasis en la seguridad ante los accidentes de tránsito. Aquí se muestra información recolectada por CONASET en donde se detallan accidentes, fatalidades a causa de accidentes y sus causas.",logo:'fas fa-car-crash')
 
 
 Sidebar.create(vistum_id:1, help_title:"Mapa Selector",help_text:"Seleccione el sector a analizar en las vistas subsiguientes.")
@@ -64,9 +64,9 @@ Sidebar.create(vistum_id:5, help_title:"Ranking Pórticos",help_text:"Muestra un
 Sidebar.create(vistum_id:6, help_title:"Ciclovías en la región",help_text:"Muestra los kilómetros de ciclovías por comuna, de acuerdo a la información oficial.")
 Sidebar.create(vistum_id:6, help_title:"Índice de caminabilidad",help_text:"El Centro de Desarrollo Urbano Sustentable (CEDEUS) elabora un indicador de la caminabilidad ('walkability') por comuna. Éste indica la accesibilidad a través de la caminata los habitantes de cada sector con un rango de 0 a 100.")
 
-Sidebar.create(vistum_id:7, help_title:"Fatalidades en accidentes",help_text:"Se muestra la cantidad de personas afectadas por accidentes, distinguiendo por gravedad.")
-Sidebar.create(vistum_id:7, help_title:"Causas y Fatalidades", help_text:"Muestra la proporción de causas que componen a los accidentes, y la gravedad resultante.")
-Sidebar.create(vistum_id:7, help_title:"Accidentes Fatales por Zona", help_text:"Muestra la cantidad de personas afectadas por accidentes. Distingue por comuna en la que ocurrió el accidente.")
+Sidebar.create(vistum_id:7, help_title:"Gravedad en accidentes",help_text:"Se muestra la cantidad de personas afectadas por accidentes, distinguiendo por nivel de gravedad.")
+Sidebar.create(vistum_id:7, help_title:"Gravedad y tipo de accidente", help_text:"Muestra la proporción de causas que componen a los accidentes, y la gravedad resultante.")
+Sidebar.create(vistum_id:7, help_title:"Gravedad en accidentes por comuna", help_text:"Muestra la cantidad de personas afectadas por accidentes. Distingue por comuna en la que ocurrió el accidente.")
 Sidebar.create(vistum_id:7, help_title:"Comparativo Países",help_text:"Compara la tasa de fatalidades por cada 100.000 habitantes entre la región y otros países, de acuerdo al información de la OMS.")
 
 #estos son los números del index
