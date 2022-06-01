@@ -95,6 +95,7 @@ div.content-tittle .big{
 
 
 /* CONTENIDO HOME */
+
 div.content-home {
 	color: #580060;
 	font-family: Montserrat;	
@@ -103,6 +104,14 @@ div.content-home {
 /* 	line-height: 24px; */
 	background-color: #EEF1F0;
 }
+
+@media only screen and (min-width: 1600px) {
+	div.content-home {
+		border-left:100px;
+		border-right:100px;
+	}
+}
+
 #select-home{
     margin: -30px 15px 0px 15px;
 }
