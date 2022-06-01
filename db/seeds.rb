@@ -56,7 +56,7 @@ Sidebar.create(vistum_id:4, help_title:"Ranking ICR de operadores", help_text:"M
 Sidebar.create(vistum_id:4, help_title: "Evolución ICR", help_text:"Se presentan los ICR promedio obtenidos por los operadores a lo largo del tiempo.")
 Sidebar.create(vistum_id:4, help_title:"Evolución de la velocidad de Red/Transantiago por periodo de día", help_text:"Muestra cómo ha evolucionado la velocidad comercial promedio de los buses Red/Transantiago a lo largo de los años en tres distintos periodos de un día laboral.")
 
-Sidebar.create(vistum_id:5, help_title:"Desarrollo Parque Automotriz", help_text:"Evolución de la cantidad de vehículos del parque automotriz de la región. Se discrimina por tipo de vehículo.", data_title:"Vehículos totales",data_text:"Parque automotriz del año 2020",data_number:"...")
+Sidebar.create(vistum_id:5, help_title:"Desarrollo Parque Automotriz", help_text:"Evolución de la cantidad de vehículos del parque automotriz de la región. Se discrimina por tipo de vehículo.", data_title:"Vehículos totales",data_text:"Parque automotriz del año 2020 (vehículos)",data_number:"...")
 Sidebar.create(vistum_id:5, help_title:"Autopistas de la Región",help_text:"Muestra las autopistas urbanas de la región.")
 Sidebar.create(vistum_id:5, help_title:"Evolución Conteo Vehicular",help_text:"Muestra la evolución del total de conteos de vehículos registrados por autopista dividido en la cantidad de pórticos de cada autopista.", data_title:"Tasa de motorización", data_text:"Tasa de motorización año 2016", data_number:"59%")
 Sidebar.create(vistum_id:5, help_title:"Ranking Pórticos",help_text:"Muestra un ranking de los pórticos según la cantidad de vehículos que pasan bajo ellos.")
