@@ -107,8 +107,8 @@ div.content-home {
 
 @media only screen and (min-width: 1600px) {
 	div.content-home {
-		border-left:100px;
-		border-right:100px;
+		margin-left:100px;
+		margin-right:100px;
 	}
 }
 
