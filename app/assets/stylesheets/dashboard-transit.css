@@ -105,6 +105,12 @@ div.content-home {
 	background-color: #EEF1F0;
 }
 
+@media only screen and (min-width: 1400px){
+	.margen_centro{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
 
 #select-home{
     margin: -30px 15px 0px 15px;
