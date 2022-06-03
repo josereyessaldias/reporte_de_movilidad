@@ -204,6 +204,12 @@ div.content-home .caja a{
 /* FIN CONTENIDO HOME */
 
 /* SIDEBAR */
+.morado_logo{
+	width: 200px;
+	background-color: #44255F;
+	margin-top: 36px
+}
+
 .sidebar {
 	/*     min-width: 250px; */
 	/*     max-width: 250px; */
@@ -231,6 +237,12 @@ div.content-home .caja a{
 @media only screen and (min-width: 1600px){
 	.sidebar{
 		width:220px;
+	}
+	div.content{
+		margin-left: 220px
+	}
+	.morado_logo{
+	width: 220px;
 	}
 }
 
