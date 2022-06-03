@@ -460,6 +460,9 @@ div.botones-navegacion .btn-right{
 	.morado_logo{
 		width: 240px;
 	}
+	.titulo_hacia_izq{
+		padding-left: 60px
+	}
 	.texto_hacia_izq{
 		padding-left: 60px
 	}
