@@ -239,10 +239,22 @@ div.content-home .caja a{
 		width:240px;
 	}
 	div.content{
-		margin-left: 300px
+		margin-left: 240px
 	}
 	.morado_logo{
-	width: 240px;
+		width: 240px;
+	}
+	.cabecera-detalle{
+		padding-left: 60px
+	}
+	.titulo-detalle{
+		padding-left: 60px
+	}
+	.texto-detalle{
+		padding-left: 60px
+	}
+	.vista{
+		padding-left: 60px
 	}
 }
 
