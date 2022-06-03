@@ -460,13 +460,7 @@ div.botones-navegacion .btn-right{
 	.morado_logo{
 		width: 240px;
 	}
-	.cabecera-detalle{
-		padding-left: 60px
-	}
-	.titulo-detalle{
-		padding-left: 60px
-	}
-	.texto-detalle{
+	.texto_hacia_izq{
 		padding-left: 60px
 	}
 	.vista{
