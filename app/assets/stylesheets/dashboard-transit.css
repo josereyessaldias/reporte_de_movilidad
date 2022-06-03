@@ -245,14 +245,9 @@ div.content-home .caja a{
 		width: 240px;
 	}
 	.cabecera-detalle{
-		margin-left: 60px
+		padding-left: 60px
 	}
-	.titulo-detalle{
-		margin-left: 60px
-	}
-	.texto-detalle{
-		margin-left: 60px
-	}
+
 	.vista{
 		padding-left: 60px
 	}
