@@ -233,28 +233,6 @@ div.content-home .caja a{
 	padding-top: 25px;
 	height: 100%;
 }
-
-@media only screen and (min-width: 1600px){
-	.sidebar{
-		width:240px;
-	}
-	div.content{
-		margin-left: 240px
-	}
-	.morado_logo{
-		width: 240px;
-	}
-	.cabecera-detalle{
-		padding-left: 60px
-	}
-
-	.vista{
-		padding-left: 60px
-	}
-}
-
-
-
 .sidebar-header {
 	text-align: center;
 }
@@ -469,6 +447,31 @@ div.botones-navegacion .btn-right{
 	margin-bottom: 0px !important;
 	font-family: Montserrat;
 	font-size: 12px !important;
+}
+
+
+@media only screen and (min-width: 1600px){
+	.sidebar{
+		width:240px;
+	}
+	div.content{
+		margin-left: 240px
+	}
+	.morado_logo{
+		width: 240px;
+	}
+	.cabecera-detalle{
+		padding-left: 60px
+	}
+	.titulo-detalle{
+		padding-left: 60px
+	}
+	.texto-detalle{
+		padding-left: 60px
+	}
+	.vista{
+		padding-left: 60px
+	}
 }
 
 
