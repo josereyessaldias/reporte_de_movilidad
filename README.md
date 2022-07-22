@@ -1,5 +1,19 @@
 # README
 
+#Reporte de Movilidad
+###Para correrlo se debe crear la base de datos (postgresql), correr la migraciones y luego el seed.
+###db:create
+###db:migrate
+###db:seed
+
+###En caso de actualizar los valores del seed, debe researse la base de datos y luego correr el seed.
+###db:reset
+###db:seed
+
+
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
