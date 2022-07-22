@@ -46,10 +46,14 @@
 						</div>
 					</nav>
 
-
+					
+						<a class="navbar-brand pt-0 logo-cell" style="margin-left:5.3%" href="https://www.uc.cl" target="_blank">
+							<img src=<%= asset_path 'logo-uc-wh.png' %>>
+						</a>
+						
 
 					
-					<div class="content-tittle" style="padding-top: 190px;margin-top:-15px">
+					<div class="content-tittle" style="margin-top:-15px">
 						<div class="container-fluid">
 							<div class="row" style="padding-bottom: 60px; margin-top: -30px;">
 
@@ -75,14 +79,14 @@
 
 					<div class="container-fluid content-home" style="padding-bottom: 25px"><!--acá empieza caja blanca-->
 						<div class="row">
-							<div class="col-1"></div>
-							<div class="col-10 margen_centro">
+							<div class="col-0 col-md-1"></div>
+							<div class="col-12 col-md-10 margen_centro">
 								<div id="select-home" class="row">
 									<div class="col-sm-12 caja-select"> <!--acá empieza caja gris-->
 										<div class="row form-group ala">
 											<!--<label for="regionSelect" class="col-7">Selecciona tu
 												región para comenzar a explorar la informacion</label>-->
-											<label for="regionSelect" class="col-7" style="font-size: 14px">Nota: Actualmente se despliegan datos sólo para la Región Metropolitana, pero aspiramos a presentar información de todo el país.</label>
+											<label for="regionSelect" class="col-12 col-md-7" style="font-size: 14px">Nota: Actualmente se despliegan datos sólo para la Región Metropolitana, pero aspiramos a presentar información de todo el país.</label>
 
 												<!--<%= select_tag(:city_id, options_from_collection_for_select(@region.where.not(id:10), :id, :name, @region_init), :class => 'col-5 form-control ala', :onchange => 'myFunction()') %>-->
 												

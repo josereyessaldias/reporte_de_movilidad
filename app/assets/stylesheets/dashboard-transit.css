@@ -40,6 +40,22 @@ select{
 	font-weight: 400;
 
 }
+.logo-cell{
+	display: none;
+}
+
+@media only screen and (max-width: 800px){
+	.menu-uc-superior{
+		display: none;
+	}
+	.logo-cell{
+		display: block;
+		margin-top: 10px;
+	}
+
+}
+
+
 .menu-uc-superior .nav {
 	width: 100%;
 }
@@ -62,19 +78,36 @@ div.content-tittle {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 190px;
 }
 div.content-tittle .row {
 	padding-bottom: 60px;
     padding-left: 60px;
 }
+
+@media only screen and (max-width: 800px){
+	div.content-tittle{
+		padding-top: 30px;
+	}
+	div.content-tittle .row{
+		padding-left: 10px;
+	}
+}
+
+
 div.content-tittle .sma{
 	font-size: 16px;
 	letter-spacing: 4px;
 	line-height: 25px;
 	width: 75%;
-
 	background-color: rgba(68,37,95,1);
 }
+@media only screen and (max-width: 800px){
+	div.content-tittle .sma{
+		width: 100%;
+	}
+}
+
 div.content-tittle .med{
 	font-size: 28px;
 	font-weight: 700;
@@ -145,6 +178,16 @@ div.content-home .caja-select select{
 	border-radius: 25px;
 	border: 0;
 }
+
+@media only screen and (max-width: 800px){
+	.provisional_select_2{
+		width: 60%;
+		margin-left:20%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
 
 
 /*.ala option:nth-of-type(2){
