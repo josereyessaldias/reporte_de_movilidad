@@ -105,6 +105,9 @@ div.content-tittle .sma{
 @media only screen and (max-width: 800px){
 	div.content-tittle .sma{
 		width: 100%;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 3px;
 	}
 }
 
@@ -116,6 +119,7 @@ div.content-tittle .med{
 	letter-spacing: 3px;
 	line-height: 1;
 }
+
 div.content-tittle .big{
 	font-size: 50px;
 	font-weight: 700;
@@ -123,6 +127,16 @@ div.content-tittle .big{
 	line-height: 67px;
 	background-color: #44255F;
 	letter-spacing: 6px;
+}
+
+@media only screen and (max-width: 800px){
+	div.content-tittle .med{
+		font-size: 22px;
+	}
+	div.content-tittle .big{
+		font-size: 42px;
+		line-height: 52px;
+	}
 }
 /* FIN CONTENIDO TITULO */
 
