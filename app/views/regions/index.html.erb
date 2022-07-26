@@ -86,12 +86,12 @@
 										<div class="row form-group ala">
 											<!--<label for="regionSelect" class="col-7">Selecciona tu
 												región para comenzar a explorar la informacion</label>-->
-											<label for="regionSelect" class="col-12 col-md-7" style="font-size: 14px">Nota: Actualmente se despliegan datos sólo para la Región Metropolitana, pero aspiramos a presentar información de todo el país.</label>
+											<label for="regionSelect" class="col-12 col-md-7 texto-provisorio">Nota: Actualmente se despliegan datos sólo para la Región Metropolitana, pero aspiramos a presentar información de todo el país.</label>
 
 												<!--<%= select_tag(:city_id, options_from_collection_for_select(@region.where.not(id:10), :id, :name, @region_init), :class => 'col-5 form-control ala', :onchange => 'myFunction()') %>-->
 												
 												<!--<%= select_tag "beta", raw("<option> Región Metropolitana</option>"), :class => 'provisional_select' %>-->
-												<button class="provisional_select_2">REGIÓN METROPOLITANA</button>
+												<button class="provisional_select_2 col-md-5">REGIÓN METROPOLITANA</button>
 
 												<!-- <select
 												class="col-4 form-control" id="regionSelect" name="regionSelect">
@@ -122,7 +122,7 @@
 
 					<footer class="container-fluid content-footer">
 						<div class="row">
-							<div class="offset-1 col-3">
+							<div class="offset-3 offset-md-1 col-3">
 								<p style="text-align: center;">¿TIENES UNA SUGERENCIA O SOLICITUD?</p>
 							</div>
 							<div class="col-2 rojo pt-3">
@@ -130,7 +130,7 @@
 									<br>
 									<!--<a th:href="@{/bibliografia}">BIBLIOGRAFÍA</a>-->
 							</div>
-							<div class="col-5">
+							<div class="col-5 logos-todos">
 								<div class="row">
 									<div class="col-4">
 										<a href="https://www.ing.uc.cl/transporte-y-logistica/" target="_blank"><img alt="" class="img-fluid" src=<%= asset_path"ditl2.png"%> style="max-height:70px;"></a>
@@ -144,6 +144,19 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-5 logos-chicos">
+								<div class="row">
+									<div class="col-4">
+										<a href="https://www.ing.uc.cl/transporte-y-logistica/" target="_blank"><img alt="" class="img-fluid" src=<%= asset_path"ditl2.png"%> style="max-height:70px;"></a>
+									</div>
+									<div class="col-4">
+										<a href="https://www.cedeus.cl/" target="_blank"><img alt="" class="img-fluid" src=<%= asset_path"cedeus.png"%> style="max-height:55px;"></a>
+									</div>
+									<div class="col-4 pt-0">
+										<a href="http://www.brt.cl/" target="_blank"><img alt="" class="img-fluid" src=<%= asset_path"brt.png"%> style="max-height:48px;"></a>
+									</div>
+								</div>
+							</div>
 					</footer>
 
 

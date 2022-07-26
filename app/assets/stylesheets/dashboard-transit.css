@@ -44,7 +44,7 @@ select{
 	display: none;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 720px){
 	.menu-uc-superior{
 		display: none;
 	}
@@ -85,7 +85,7 @@ div.content-tittle .row {
     padding-left: 60px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 720px){
 	div.content-tittle{
 		padding-top: 30px;
 	}
@@ -102,7 +102,7 @@ div.content-tittle .sma{
 	width: 75%;
 	background-color: rgba(68,37,95,1);
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 720px){
 	div.content-tittle .sma{
 		width: 100%;
 		font-size: 15px;
@@ -129,7 +129,7 @@ div.content-tittle .big{
 	letter-spacing: 6px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 720px){
 	div.content-tittle .med{
 		font-size: 22px;
 	}
@@ -193,7 +193,7 @@ div.content-home .caja-select select{
 	border: 0;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 720px){
 	.provisional_select_2{
 		width: 60%;
 		margin-left:20%;
@@ -202,6 +202,15 @@ div.content-home .caja-select select{
 	}
 }
 
+.texto-provisorio {
+	font-size: 14px;
+}
+
+@media only screen and (max-width: 720px){
+	.texto-provisorio {
+		text-align: center;
+	}
+}
 
 
 /*.ala option:nth-of-type(2){
@@ -562,6 +571,23 @@ footer.content-footer .rojo{
 footer.content-footer .rojo a{
 	color: inherit;
 }
+
+.logos-chicos {
+	display: none
+}
+
+@media only screen and (max-width: 720px){
+	footer.content-footer {
+		font-size: 12px;
+	}
+	.logos-todos {
+		display: none
+	}
+	.logos-chicos {
+	display: inline
+	}
+}
+
 /* FIN CONTENIDO FOOTER */
 
 a{
